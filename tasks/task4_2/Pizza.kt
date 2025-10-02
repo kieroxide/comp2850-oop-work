@@ -1,5 +1,5 @@
 fun main(){
-    val PIZZA_OPTIONS = 'a'.rangeTo('d');
+    val PIZZA_OPTIONS = 'a'..'d';
 
     println("Please choose a pizza Options\na) Cheese\nb) Pepperoni\nc) Ham\nd) Donner");
     val option = readln().lowercase();

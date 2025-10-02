@@ -1,9 +1,9 @@
 // Task 3.4: string interpolation
 fun main(){
-    const val SHORT_NAME_LENGTH_MAX = 5
+    val SHORT_NAME_LENGTH_MAX = 5
     
     print("Enter your name: ")
-    const val name = readln()
+    val name = readln()
     
     println("Hello $name!")
     println("Your name contains ${name.length} characters")

@@ -5,7 +5,7 @@ fun main(){
     val radius = readDouble("Enter radius of the circle: ");
     val area = circleArea(radius);
     val circum = circleCircumference(radius);
-    println("Circle of radius $radius has area: $area and circum $circum");
+    println("Circle of radius %.4f".format(radius) + " has area: %.4f".format(area) +  " and circum %.4f".format(circum));
 }
 
 fun circleArea(radius: Double) = PI * radius * radius;

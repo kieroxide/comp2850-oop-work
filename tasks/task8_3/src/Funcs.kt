@@ -3,17 +3,13 @@
 typealias Record = Pair<String,Double>
 
 fun fetchData(): List<Record> {
-  // Create and return a simulated dataset here
-  // Use the listOf() and to() functions to create the dataset
+    val list = listOf("a" to 1.2, "b" to 3.2, "c" to 4.4)
+    return list
 }
 
 // Challenge: compute average temperature with one line of code
 // in main(), instead of using the function below!
 
 fun averageTemp(data: List<Record>): Double {
-    var sum = 0.0
-    for (record in data) {
-        sum += record.second
-    }
-    return sum / data.size
+    return data.sumOf {it.second} / data.size
 }

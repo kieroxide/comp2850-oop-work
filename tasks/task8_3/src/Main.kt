@@ -1,9 +1,9 @@
 // Task 8.3: weather station temperature analysis program
 
 fun main() {
-    // Add code here to:
-    //   - Fetch data
-    //   - Find records with lowest and and highest temperatures
-    //   - Compute average temperature
-    //   - Display all of these statistics
+    val data = fetchData()
+    println("""Data: $data
+    Minimum Temp: ${data.minBy {it.second}}
+    Maximum Temp: ${data.maxBy {it.second}}
+    Minimum Temp: ${averageTemp(data)}""")
 }

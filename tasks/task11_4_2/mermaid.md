@@ -4,8 +4,8 @@ Here is a UML class diagram, specified using [Mermaid][mer].
 
 ```mermaid
 classDiagram
-  Customer -- Order, places
-  Order -- OrderItem, includes
+  Customer -- Order: places
+  Order -- OrderItem: includes
 
   class Customer {
     name: String

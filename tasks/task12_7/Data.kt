@@ -2,8 +2,7 @@
 
 import java.time.LocalDate
 
-class Person(var name: String, val birth: LocalDate) {
-    var isMarried = false
+data class Person(var name: String, val birth: LocalDate, var isMarried = false) {
 }
 
 fun main() {
@@ -14,15 +13,15 @@ fun main() {
     println("p1 == p1?     : ${p1 == p1}")
     println("p1 == p2?     : ${p1 == p2}")
 
-    println("p1.hashCode() : %08x".format(p1.hashCode()))
+    println("p1.hashCode() : %08x".format(p1.hashCode())) // Hashcode is from instance properties when data class
     println("p2.hashCode() : %08x".format(p2.hashCode()))
 
     println("p1.toString() : $p1")
     println("p2.toString() : $p2")
 
-    // println("p1 marries")
-    // p1.isMarried = true
-    // println("p1 == p2?     : ${p1 == p2}")
-    // println("p1.hashCode() : %08x".format(p1.hashCode()))
-    // println("p1.toString() : $p1")
+    println("p1 marries")
+    p1.isMarried = true
+    println("p1 == p2?     : ${p1 == p2}")
+    println("p1.hashCode() : %08x".format(p1.hashCode()))
+    println("p1.toString() : $p1")
 }
